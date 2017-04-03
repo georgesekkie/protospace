@@ -8,11 +8,32 @@
 /.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/
-/vendor/bundle/
-!/log/.keep
-!/tmp/.keep
+/log
+tmp/*
 
-# Ignore Byebug command history file.
-.byebug_history
+/public/lesson
+/public/assets/
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+config/setting.yml
+
+db/csv/periods.csv
+db/csv/c_title_images.csv
+!public/uploads/user/image/1/tech-camp.png
+public/uploads
+
+coverage
+
+node_modules/
+npm-debug.log
+
+app/assets/javascripts/dist
+
+app/models/initial_table.rb
+
+/vendor/bundle/
+
+/.ruby-version
+dump.rdb
