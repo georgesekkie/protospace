@@ -1,67 +1,24 @@
-# PROTOSPACE
+# README
 
-## TABLES
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-### prototypes
+Things you may want to cover:
 
-- name           :string
-- concept        :text
-- catch_copy     :text
-- likes_count    :integer
-- user_id        :integer
+* Ruby version
 
-### users
+* System dependencies
 
-- name       :string
-- works      :text
-- profile    :text
-- avatar     :text
-- email      :text
-- password   :text
+* Configuration
 
+* Database creation
 
-### images
+* Database initialization
 
-- prototype_id   :integer
-- image          :text
-- status(enum)   :integer
+* How to run the test suite
 
-### comments
-- comment        :text
-- user_id        :integer
-- prototype_id   :integer
+* Services (job queues, cache servers, search engines, etc.)
 
-### likes
+* Deployment instructions
 
-- user_id            :integer
-- prototype_id       :integer
-
-
-## ASSOCIATION
-
-### prototype
-
-- has_many      :images
-- has_many      :comments
-- has_many      :likes
-- belongs _to   :user
-
-### user
-
-- has_many   :prototypes
-- has_many   :comments
-- has_many   :likes
-
-### image
-
-- belongs_to     :prototype
-
-### comment
-
-- belongs_to     :prototype
-- belongs_to     :user
-
-### like
-
-- belongs_to     :prototype
-- belongs_to     :user
+* ...
